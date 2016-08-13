@@ -14,11 +14,15 @@ mkdir -p $CACHE_DIR
 curl -L -o $CACHE_DIR/whois.deb $URL 2>&1
 
 echo "Installing whois..."
-mkdir -p $BUILD_DIR/whois
-dpkg -x $CACHE_DIR/whois.deb $BUILD_DIR/whois/
+mkdir -p $BUILD_DIR/vendor/whois
+dpkg -x $CACHE_DIR/whois.deb $BUILD_DIR/vendor/whois
 
 echo "Paths"
 echo $BUILD_DIR
 echo $CACHE_DIR
+
+ls $BUILD_DIR/vendor/whois
+
+cd $BUILD_DIR/vendor/whois
 
 whois www.google.com
