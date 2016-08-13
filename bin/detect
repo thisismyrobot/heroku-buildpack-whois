@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo "PhantomJS"
+echo "whois"
 exit 0

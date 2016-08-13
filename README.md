@@ -1,3 +1,5 @@
+# THIS IS NOT YET WORKING - DO NOT USE
+
 # Heroku buildpack: whois
 
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) of whois.
