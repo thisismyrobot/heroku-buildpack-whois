@@ -1,6 +1,6 @@
 # Heroku buildpack: whois
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) of whois.
+This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) to give you the 'whois' command.
 
 # Installation
 
