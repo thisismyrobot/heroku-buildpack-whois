@@ -1,18 +1,7 @@
-Heroku buildpack: PhantomJS
-=======================
+# Heroku buildpack: whois
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) of PhantomJS(http://phantomjs.org).
+This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) of whois.
 
-Usage
------
+## Thank you
 
-Example usage:
-
-```shell
-$ heroku create --stack cedar --buildpack https://github.com/stomita/heroku-buildpack-phantomjs.git
-
-# or if your app is already created:
-$ heroku buildpacks:add https://github.com/stomita/heroku-buildpack-phantomjs
-
-$ git push heroku master
-```
+This is on a fork of https://github.com/stomita/heroku-buildpack-phantomjs
