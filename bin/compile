@@ -24,6 +24,6 @@ ls $BUILD_DIR/vendor/whois
 ls $BUILD_DIR/vendor/whois/usr
 ls $BUILD_DIR/vendor/whois/usr/bin
 
-cd $BUILD_DIR/vendor/whois
+cd $BUILD_DIR/vendor/whois/usr/bin
 
 whois www.google.com
