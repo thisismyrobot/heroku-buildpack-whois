@@ -9,6 +9,8 @@ CACHE_DIR=$2
 VERSION="1.0.0"
 URL="http://http.us.debian.org/debian/pool/main/w/whois/whois_5.2.7_amd64.deb"
 
+ls $BUILD_DIR
+
 echo "Downloading whois..."
 mkdir -p $CACHE_DIR
 curl -s -L -o $CACHE_DIR/whois.deb $URL 2>&1
@@ -17,13 +19,6 @@ echo "Installing whois..."
 mkdir -p $BUILD_DIR/vendor/whois
 dpkg -x $CACHE_DIR/whois.deb $BUILD_DIR/vendor/whois
 
-echo "Paths"
-echo $BUILD_DIR
-echo $CACHE_DIR
-ls $BUILD_DIR/vendor/whois
-ls $BUILD_DIR/vendor/whois/usr
-ls $BUILD_DIR/vendor/whois/usr/bin
-
+echo "Testing whois..."
 cd $BUILD_DIR/vendor/whois/usr/bin/
-ls
-./whois www.google.com
+./whois www.example.com
