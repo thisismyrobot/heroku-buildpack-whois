@@ -4,11 +4,11 @@ This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) of
 
 # Installation
 
-[Heroku docs](https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app#adding-a-buildpack)
-
 ```bash
      heroku buildpacks:add https://github.com/thisismyrobot/heroku-buildpack-whois.git
 ```
+
+[Heroku docs](https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app#adding-a-buildpack)
 
 ## Thank you
 
