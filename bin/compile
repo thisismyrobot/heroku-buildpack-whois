@@ -22,6 +22,7 @@ echo $BUILD_DIR
 echo $CACHE_DIR
 ls $BUILD_DIR/vendor/whois
 ls $BUILD_DIR/vendor/whois/usr
+ls $BUILD_DIR/vendor/whois/usr/bin
 
 cd $BUILD_DIR/vendor/whois
 
