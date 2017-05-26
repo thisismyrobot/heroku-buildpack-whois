@@ -20,4 +20,5 @@ fi
 echo "-----> Installing whois package to ${BUILD_DIR}/vendor/whois/usr/bin/whois"
 mkdir -p $BUILD_DIR/vendor/whois
 dpkg -x $CACHE_DIR/$PACKAGE $BUILD_DIR/vendor/whois
-PATH="$BUILD_DIR/vendor/whois/usr/bin:$PATH"
+
+echo "export PATH=\$HOME/vendor/whois/usr/bin:\$PATH" >> $BUILD_DIR/.profile.d/whois_buildpack_paths.sh
